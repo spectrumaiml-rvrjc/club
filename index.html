@@ -97,7 +97,7 @@
           <div
             class="carousel-item active"
             style="
-              background-image: url('newHead.png');
+              background-image: url('heroNew.jpg');
               background-size: 87%;
               background-repeat: no-repeat;
               background-position: center;
@@ -478,7 +478,8 @@
 
     
     <!-- Team Section -->
-<section id="team" class="section bg-light">
+<!-- 
+    <section id="team" class="section bg-light">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center fade-in">
@@ -495,7 +496,7 @@
               <div class="team-info">
                   <h5>Dr. G Rama Mohan Babu</h5>
                   <p class="team-role">Professor & Head CSE(AI&ML) dept.</p>
-                  <!-- <p class="mb-0">President</p> -->
+                  <!-- <p class="mb-0">President</p> 
               </div>
           </div>
         </div>
@@ -510,7 +511,7 @@
                   <h5>Mr. M Praveen Kumar</h5>
                   <p class="team-role">Faculty Coordinator & Asst. Professor</p>
                   <!-- <p class="team-role">Assistant Professor</p> -->
-                  <!-- <p class="mb-0">President</p> -->
+                  <!-- <p class="mb-0">President</p> 
               </div>
           </div>
         </div>
@@ -528,8 +529,8 @@
                       </a>
                   </h5>
                   <p class="team-role">Student Coordinator</p>
-                  <!-- <p class="team-role">Assistant Professor</p> -->
-                  <!-- <p class="mb-0">President</p> -->
+                  <!-- <p class="team-role">Assistant Professor</p> 
+                  <p class="mb-0">UG-3</p>
               </div>
           </div>
         </div>
@@ -548,7 +549,7 @@
                   </h5>
                   <p class="team-role">Student Coordinator</p>
                   <!-- <p class="team-role">Assistant Professor</p> -->
-                  <!-- <p class="mb-0">President</p> -->
+                  <!-- <p class="mb-0">President</p> 
               </div>
           </div>
         </div>
@@ -568,7 +569,7 @@
                   </h5>
                   <p class="team-role">Student Coordinator</p>
                   <!-- <p class="team-role">Assistant Professor</p> -->
-                  <!-- <p class="mb-0">President</p> -->
+                  <!-- <p class="mb-0">President</p> 
               </div>
           </div>
         </div>
@@ -588,7 +589,7 @@
                   </h5>
                   <p class="team-role">Club Member</p>
                   <!-- <p class="team-role">Assistant Professor</p> -->
-                  <!-- <p class="mb-0">President</p> -->
+                  <!-- <p class="mb-0">President</p> 
               </div>
           </div>
         </div>
@@ -608,10 +609,10 @@
                       <a href="http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4" class="text-decoration-none ms-2">
                           <i class="fab fa-linkedin text-primary"></i>
                       </a>
-                  </h5>
-                  <p class="team-role">Club Member</p>
+                   </h5>
+                 <p class="team-role">Club Member</p>
                   <!-- <p class="team-role">Assistant Professor</p> -->
-                  <!-- <p class="mb-0">President</p> -->
+                  <!-- <p class="mb-0">President</p> 
               </div>
           </div>
         </div>
@@ -631,7 +632,7 @@
                   </h5>
                   <p class="team-role">Club Member</p>
                   <!-- <p class="team-role">Assistant Professor</p> -->
-                  <!-- <p class="mb-0">President</p> -->
+                  <!-- <p class="mb-0">President</p> 
               </div>
           </div>
         </div>
@@ -641,7 +642,22 @@
       
     </div>
   </div>
+</section> 
+-->
+
+<section id="team" class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center fade-in">
+        <h2 class="section-title">Meet Our Team</h2>
+      </div>
+    </div>
+    <div class="row" id="team-container">
+      <!-- Team cards will be injected here by JavaScript -->
+    </div>
+  </div>
 </section>
+
 
 
 
@@ -842,5 +858,45 @@
         );
       });
     </script>
+
+    <script>
+  fetch('teamDetails.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('team-container');
+
+      data.forEach(member => {
+        const col = document.createElement('div');
+        col.className = 'col-lg-6 fade-in';
+
+        const imgSrc = `team/${member.image}`;
+        const linkedinIcon = member.linkedin ? `<a href="${member.linkedin}" class="text-decoration-none ms-2" target="_blank"><i class="fab fa-linkedin text-primary"></i></a>` : '';
+
+        const yearInfo = member.year ? `<p class="mb-0">${member.year}</p>` : '';
+
+        col.innerHTML = `
+          <div class="team-card">
+            <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                <img src="${imgSrc}" alt="${member.name}" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                <h5>${member.name} ${linkedinIcon}</h5>
+                <p class="team-role">${member.role}</p>
+                ${yearInfo}
+              </div>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(col);
+      });
+    })
+    .catch(error => {
+      console.error('Error loading team details:', error);
+    });
+</script>
+
+
   </body>
 </html>

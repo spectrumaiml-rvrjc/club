@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Dr. G Rama Mohan Babu",
+        "role": "Professor & Head CSE(AI&ML) dept.",
+        "image": "grb.jpg",
+        "linkedin": ""
+    },
+    {
+        "name": "Mr. M Praveen Kumar",
+        "role": "Faculty Coordinator & Asst. Professor",
+        "image": "praveen_sir.jpg",
+        "linkedin": ""
+    },
+    {
+        "name": "G. NV Nihar",
+        "role": "Student Coordinator",
+        "year": "UG-3",
+        "image": "niharSpectrum.png",
+        "linkedin": "http://www.linkedin.com/in/nihargnv"
+    },
+    {
+        "name": "Shivaraju Nallagorla",
+        "role": "Student Coordinator",
+        "year": "UG-3",
+        "image": "shivarajSpectrum.jpg",
+        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
+    },
+    {
+        "name": "Siri Chandana",
+        "role": "Student Coordinator",
+        "year": "UG-3",
+        "image": "siriChandanaSpectrum.jpg",
+        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
+    },
+    {
+        "name": "K. Joseph Prem Kumar",
+        "role": "Club Member",
+        "year": "UG-3",
+        "image": "josephSpectrum.jpg",
+        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
+    },
+    {
+        "name": "K. Chetan Eshwar",
+        "role": "Club Member",
+        "year": "UG-4",
+        "image": "chetanSpectrum.jpg",
+        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
+    },
+    {
+        "name": "Amulya Annapureddy",
+        "role": "Club Member",
+        "year": "UG-3",
+        "image": "amulyaSpectrum.jpg",
+        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
+    }
+]
