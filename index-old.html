@@ -1,483 +1,902 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechForge Club - Innovation Starts Here</title>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Spectrum - CSE(AI&ML) Technical Club</title>
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <i class="fas fa-code me-2"></i>TechForge
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#highlights">What We Do</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#events">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <i class="fas fa-code me-2"></i>Spectrum
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#highlights">What We Do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Carousel -->
-    <section id="home">
-        <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-            </div>
-            
-            <div class="carousel-inner">
-                <div class="carousel-item active hero-slide slide-1">
-                    <div class="container">
-                        <div class="hero-content">
-                            <h1>Welcome to TechForge</h1>
-                            <p>Where Innovation Meets Collaboration</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-item hero-slide slide-2">
-                    <div class="container">
-                        <div class="hero-content">
-                            <h1>Build the Future</h1>
-                            <p>Join us in creating tomorrow's technology today</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- <div class="carousel-item hero-slide slide-3">
-                    <div class="container">
-                        <div class="hero-content">
-                            <h1>Learn & Grow</h1>
-                            <p>Expand your skills with hands-on workshops and events</p>
-                        </div>
-                    </div>
-                </div> -->
-            </div> 
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+    <section id="home" style="padding-top: 60px">
+      <!-- Desktop Carousel -->
+      <div
+        id="heroCarousel"
+        class="carousel slide carousel-fade d-none d-lg-block"
+        data-bs-ride="carousel"
+        data-bs-interval="1000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
         </div>
+
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="
+              background-image: url('heroNew.jpg');
+              background-size: 87%;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 95vh;
+            "
+          >
+            <!-- <div class="carousel-overlay"></div> -->
+            <div
+              class="container h-100 d-flex align-items-center"
+              style="margin-top: 30px"
+            >
+              <!-- <div
+                class="carousel-caption text-start"
+                style="padding-top: 3rem"
+              >
+                <h1 class="display-4 fw-bold">Welcome to TechForge</h1>
+                <p class="lead mb-4">Where Innovation Meets Collaboration</p>
+                <a href="#about" class="btn btn-primary btn-lg px-4 me-2"
+                  >Learn More</a
+                >
+              </div> -->
+            </div>
+          </div>
+
+          <div
+            class="carousel-item"
+            style="
+              background-image: url('finalMore.png');
+              background-size: 87%;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 95vh;
+            "
+          >
+            <!-- <div class="carousel-overlay"></div> -->
+            <div class="container h-100 d-flex align-items-center">
+              <div
+                class="carousel-caption text-center"
+                style="padding-top: 3rem"
+              >
+                <h1 class="display-4 fw-bold">Build the Future</h1>
+                <p class="lead mb-4">
+                  Join us in creating tomorrow's technology today
+                </p>
+                <a href="#events" class="btn btn-primary btn-lg px-4 me-2"
+                  >View Events</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="carousel-item"
+            style="
+              background-image: url('newMore.png');
+              background-size: 87%;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 95vh;
+            "
+          >
+            <!-- <div class="carousel-overlay"></div>
+            <div class="container h-100 d-flex align-items-center">
+              <div class="carousel-caption text-end" style="padding-top: 3rem">
+                <h1 class="display-4 fw-bold">Learn & Grow</h1>
+                <p class="lead mb-4">
+                  Expand your skills with hands-on workshops and events
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam optio sequi facere unde quidem pariatur deserunt, molestias recusandae exercitationem ipsum culpa quia, corrupti blanditiis eos maiores reiciendis odit consequatur tempora.
+                </p>
+                <a href="#contact" class="btn btn-primary btn-lg px-4 me-2"
+                  >Join Us</a
+                >
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Mobile Carousel -->
+      <div
+        id="mobileHeroCarousel"
+        class="carousel slide carousel-fade d-lg-none"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#mobileHeroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mobileHeroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mobileHeroCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="
+              height: 60vh;
+              background-image: url('mobHero.png');
+            "
+          >
+            <!-- <div class="carousel-overlay"></div> -->
+            <!-- <div class="container h-100 d-flex align-items-center">
+              <div class="carousel-caption text-center">
+                <h2 class="fw-bold">Mobile Welcome</h2>
+                <p class="lead mb-3">Innovative mobile experience</p>
+                <a href="#about" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div> -->
+          </div>
+
+          <div
+            class="carousel-item"
+            style="
+              height: 60vh;
+              background-image: url('mobSlide.png');
+            "
+          >
+            <!-- <div class="carousel-overlay"></div> -->
+            <!-- <div class="container h-100 d-flex align-items-center">
+              <div class="carousel-caption text-center">
+                <h2 class="fw-bold">Mobile Future</h2>
+                <p class="lead mb-3">Creating tomorrow's tech</p>
+                <a href="#events" class="btn btn-primary btn-sm">View Events</a>
+              </div>
+            </div> -->
+          </div>
+
+          <div
+            class="carousel-item"
+            style="
+              height: 60vh;
+              background-image: url('mobMore.png');
+            "
+          >
+            <!-- <div class="carousel-overlay"></div> -->
+            <div class="container h-100 d-flex align-items-center w-100">
+              <div class="carousel-caption text-center w-100">
+                <h1 class="fw-bold">Build the Future</h1>
+                <p class="lead mb-3">Join us in creating tomorrow's technology today</p>
+                <a href="#events" class="btn btn-primary btn-sm">View Events</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mobileHeroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mobileHeroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center fade-in">
-                    <h2 class="section-title">About TechForge</h2>
-                    <p class="lead">We are a passionate community of tech enthusiasts, innovators, and problem-solvers dedicated to pushing the boundaries of technology. Our mission is to create an inclusive environment where students can learn, collaborate, and build the future through hands-on experience with cutting-edge technologies.</p>
-                    <p>From beginner-friendly workshops to advanced hackathons, we foster growth, creativity, and technical excellence in every member of our community.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center fade-in">
+            <h2 class="section-title">About TechForge</h2>
+            <p class="lead">
+              We are a passionate community of tech enthusiasts, innovators, and
+              problem-solvers dedicated to pushing the boundaries of technology.
+              Our mission is to create an inclusive environment where students
+              can learn, collaborate, and build the future through hands-on
+              experience with cutting-edge technologies.
+            </p>
+            <p>
+              From beginner-friendly workshops to advanced hackathons, we foster
+              growth, creativity, and technical excellence in every member of
+              our community.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Highlights Section -->
     <section id="highlights" class="section bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center fade-in">
-                    <h2 class="section-title">What We Do</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 fade-in">
-                    <div class="highlight-card text-center">
-                        <div class="highlight-icon mx-auto">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h4>Workshops</h4>
-                        <p>Interactive learning sessions covering the latest technologies, frameworks, and industry best practices.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 fade-in">
-                    <div class="highlight-card text-center">
-                        <div class="highlight-icon mx-auto">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h4>Hackathons</h4>
-                        <p>Competitive coding events where teams collaborate to build innovative solutions in limited time.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 fade-in">
-                    <div class="highlight-card text-center">
-                        <div class="highlight-icon mx-auto">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4>Coding Events</h4>
-                        <p>Regular programming challenges, algorithm contests, and collaborative coding sessions.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 fade-in">
-                    <div class="highlight-card text-center">
-                        <div class="highlight-icon mx-auto">
-                            <i class="fas fa-share-alt"></i>
-                        </div>
-                        <h4>Knowledge Sharing</h4>
-                        <p>Tech talks, project showcases, and mentorship programs to share experiences and insights.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center fade-in">
+            <h2 class="section-title">What We Do</h2>
+          </div>
         </div>
+        <div class="row g-3 justify-content-center">
+          <!-- <div class="col-lg-3 col-md-6 fade-in">
+            <div class="highlight-card text-center">
+              <div class="highlight-icon mx-auto">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h4>Workshops</h4>
+              <p>
+                Interactive learning sessions covering the latest technologies,
+                frameworks, and industry best practices.
+              </p>
+            </div>
+          </div> -->
+          <div class="col-lg-3 col-md-6 fade-in">
+            <div class="highlight-card text-center">
+              <div class="highlight-icon mx-auto">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h4>Hackathons</h4>
+              <p>
+                Competitive coding events where teams collaborate to build
+                innovative solutions in limited time.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 fade-in">
+            <div class="highlight-card text-center">
+              <div class="highlight-icon mx-auto">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Coding Events</h4>
+              <p>
+                Regular programming challenges, algorithm contests, and
+                collaborative coding sessions.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 fade-in">
+            <div class="highlight-card text-center">
+              <div class="highlight-icon mx-auto">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <h4>Knowledge Sharing</h4>
+              <p>
+                Tech talks, project showcases, and mentorship programs to share
+                experiences and insights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Events Section -->
     <section id="events" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center fade-in">
-                    <h2 class="section-title">Upcoming & Ongoing Events</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card">
-                        <div class="event-date">July 15, 2025</div>
-                        <span class="event-status status-upcoming">Upcoming</span>
-                        <h5 class="mt-3">Web Development Workshop</h5>
-                        <p>Learn modern web development with React, Node.js, and MongoDB. Perfect for beginners and intermediate developers.</p>
-                        <small class="text-muted"><i class="fas fa-clock me-1"></i>2:00 PM - 6:00 PM</small>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card">
-                        <div class="event-date">July 1-3, 2025</div>
-                        <span class="event-status status-ongoing">Ongoing</span>
-                        <h5 class="mt-3">Summer Hackathon 2025</h5>
-                        <p>48-hour coding marathon focused on AI and machine learning solutions for real-world problems.</p>
-                        <small class="text-muted"><i class="fas fa-clock me-1"></i>All Day Event</small>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card">
-                        <div class="event-date">July 22, 2025</div>
-                        <span class="event-status status-upcoming">Upcoming</span>
-                        <h5 class="mt-3">Cybersecurity Talk</h5>
-                        <p>Industry expert session on ethical hacking, penetration testing, and cybersecurity best practices.</p>
-                        <small class="text-muted"><i class="fas fa-clock me-1"></i>4:00 PM - 6:00 PM</small>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card">
-                        <div class="event-date">August 5, 2025</div>
-                        <span class="event-status status-upcoming">Upcoming</span>
-                        <h5 class="mt-3">Mobile App Development</h5>
-                        <p>Build your first mobile app using Flutter and Firebase. From concept to deployment in one day.</p>
-                        <small class="text-muted"><i class="fas fa-clock me-1"></i>10:00 AM - 4:00 PM</small>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card">
-                        <div class="event-date">August 12, 2025</div>
-                        <span class="event-status status-upcoming">Upcoming</span>
-                        <h5 class="mt-3">Tech Career Fair</h5>
-                        <p>Meet recruiters from top tech companies. Resume reviews, mock interviews, and networking opportunities.</p>
-                        <small class="text-muted"><i class="fas fa-clock me-1"></i>11:00 AM - 5:00 PM</small>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card">
-                        <div class="event-date">August 20, 2025</div>
-                        <span class="event-status status-upcoming">Upcoming</span>
-                        <h5 class="mt-3">Open Source Contribution</h5>
-                        <p>Learn how to contribute to open source projects. Git workflows, documentation, and community engagement.</p>
-                        <small class="text-muted"><i class="fas fa-clock me-1"></i>3:00 PM - 7:00 PM</small>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center fade-in">
+            <h2 class="section-title">Upcoming & Ongoing Events</h2>
+          </div>
         </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="event-card">
+              <!-- <div class="event-date">July 15, 2025</div> -->
+              <div class="event-date">Upcoming</div>
+              <!-- <span class="event-status status-upcoming">Upcoming</span> -->
+              <h5 class="mt-3">Events coming soon...</h5>
+              <p>
+                Stay tuned for our exciting lineup of events, including
+                workshops, hackathons, and tech talks. Check back regularly for
+                updates!
+              </p>
+              <!-- <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i>00:00 AM - 00:00 PM</small
+              > -->
+            </div>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 fade-in">
+            <div class="event-card">
+              <div class="event-date">July 1-3, 2025</div>
+              <span class="event-status status-ongoing">Ongoing</span>
+              <h5 class="mt-3">Summer Hackathon 2025</h5>
+              <p>
+                48-hour coding marathon focused on AI and machine learning
+                solutions for real-world problems.
+              </p>
+              <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i>All Day Event</small
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="event-card">
+              <div class="event-date">July 22, 2025</div>
+              <span class="event-status status-upcoming">Upcoming</span>
+              <h5 class="mt-3">Cybersecurity Talk</h5>
+              <p>
+                Industry expert session on ethical hacking, penetration testing,
+                and cybersecurity best practices.
+              </p>
+              <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i>4:00 PM - 6:00 PM</small
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="event-card">
+              <div class="event-date">August 5, 2025</div>
+              <span class="event-status status-upcoming">Upcoming</span>
+              <h5 class="mt-3">Mobile App Development</h5>
+              <p>
+                Build your first mobile app using Flutter and Firebase. From
+                concept to deployment in one day.
+              </p>
+              <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i>10:00 AM - 4:00 PM</small
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="event-card">
+              <div class="event-date">August 12, 2025</div>
+              <span class="event-status status-upcoming">Upcoming</span>
+              <h5 class="mt-3">Tech Career Fair</h5>
+              <p>
+                Meet recruiters from top tech companies. Resume reviews, mock
+                interviews, and networking opportunities.
+              </p>
+              <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i>11:00 AM - 5:00 PM</small
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="event-card">
+              <div class="event-date">August 20, 2025</div>
+              <span class="event-status status-upcoming">Upcoming</span>
+              <h5 class="mt-3">Open Source Contribution</h5>
+              <p>
+                Learn how to contribute to open source projects. Git workflows,
+                documentation, and community engagement.
+              </p>
+              <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i>3:00 PM - 7:00 PM</small
+              >
+            </div>
+          </div> -->
+        </div>
+      </div>
     </section>
 
+    
     <!-- Team Section -->
+<!-- 
     <section id="team" class="section bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center fade-in">
-                    <h2 class="section-title">Meet Our Team</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 fade-in">
-                    <div class="team-card">
-                        <div class="d-flex align-items-center">
-                            <div class="team-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="team-info">
-                                <h5>Alex Johnson</h5>
-                                <p class="team-role">President</p>
-                                <p class="mb-0">Full-stack developer passionate about AI and machine learning innovations. Leading the club with 3 years of experience in software development.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-in">
-                    <div class="team-card">
-                        <div class="d-flex align-items-center">
-                            <div class="team-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="team-info">
-                                <h5>Sarah Chen</h5>
-                                <p class="team-role">Vice President</p>
-                                <p class="mb-0">Cybersecurity enthusiast and competitive programming champion. Specializes in ethical hacking and has won multiple coding competitions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-in">
-                    <div class="team-card">
-                        <div class="d-flex align-items-center">
-                            <div class="team-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="team-info">
-                                <h5>Mike Rodriguez</h5>
-                                <p class="team-role">Technical Lead</p>
-                                <p class="mb-0">Cloud architecture specialist with expertise in DevOps and scalable systems. Former intern at Google with extensive backend experience.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-in">
-                    <div class="team-card">
-                        <div class="d-flex align-items-center">
-                            <div class="team-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="team-info">
-                                <h5>Emma Wilson</h5>
-                                <p class="team-role">Events Coordinator</p>
-                                <p class="mb-0">UI/UX designer focused on creating engaging and accessible user experiences. Organizes workshops and manages club social media presence.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center fade-in">
+        <h2 class="section-title">Meet Our Team</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 fade-in">
+        <div class="team-card">
+          <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                  <img src="team\grb.jpg" alt="Dr. GRB Sir" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                  <h5>Dr. G Rama Mohan Babu</h5>
+                  <p class="team-role">Professor & Head CSE(AI&ML) dept.</p>
+                  <!-- <p class="mb-0">President</p> 
+              </div>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="col-lg-6 fade-in">
+        <div class="team-card">
+          <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                  <img src="team\praveen_sir.jpg" alt="Praveen Sir" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                  <h5>Mr. M Praveen Kumar</h5>
+                  <p class="team-role">Faculty Coordinator & Asst. Professor</p>
+                  <!-- <p class="team-role">Assistant Professor</p> -->
+                  <!-- <p class="mb-0">President</p> 
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 fade-in">
+        <div class="team-card">
+          <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                  <img src="team\niharSpectrum.png" alt="Nihar" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                  <h5>G. NV Nihar 
+                      <a href="http://www.linkedin.com/in/nihargnv" class="text-decoration-none ms-2">
+                          <i class="fab fa-linkedin text-primary"></i>
+                      </a>
+                  </h5>
+                  <p class="team-role">Student Coordinator</p>
+                  <!-- <p class="team-role">Assistant Professor</p> 
+                  <p class="mb-0">UG-3</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 fade-in">
+        <div class="team-card">
+          <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                  <img src="team\shivarajSpectrum.jpg" alt="Praveen Sie" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                  <h5>Shivaraju Nallagorla
+                      <a href="http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4" class="text-decoration-none ms-2">
+                          <i class="fab fa-linkedin text-primary"></i>
+                      </a>
+                  </h5>
+                  <p class="team-role">Student Coordinator</p>
+                  <!-- <p class="team-role">Assistant Professor</p> -->
+                  <!-- <p class="mb-0">President</p> 
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 fade-in">
+        <div class="team-card">
+          <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                  <img src="team\siriChandanaSpectrum.jpg" alt="Siri Chandana" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                  <h5>Siri Chandana
+                      <a href="http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4" class="text-decoration-none ms-2">
+                          <i class="fab fa-linkedin text-primary"></i>
+                      </a>
+                  </h5>
+                  <p class="team-role">Student Coordinator</p>
+                  <!-- <p class="team-role">Assistant Professor</p> -->
+                  <!-- <p class="mb-0">President</p> 
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 fade-in">
+        <div class="team-card">
+          <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                  <img src="team\josephSpectrum.jpg" alt="K. Joseph Prem Kumar" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                  <h5>K. Joseph Prem Kumar
+                      <a href="http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4" class="text-decoration-none ms-2">
+                          <i class="fab fa-linkedin text-primary"></i>
+                      </a>
+                  </h5>
+                  <p class="team-role">Club Member</p>
+                  <!-- <p class="team-role">Assistant Professor</p> -->
+                  <!-- <p class="mb-0">President</p> 
+              </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+
+      <div class="col-lg-6 fade-in">
+        <div class="team-card">
+          <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                  <img src="team\chetanSpectrum.jpg" alt="K. Chetan" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                  <h5>K. Chetan Eshwar
+                      <a href="http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4" class="text-decoration-none ms-2">
+                          <i class="fab fa-linkedin text-primary"></i>
+                      </a>
+                   </h5>
+                 <p class="team-role">Club Member</p>
+                  <!-- <p class="team-role">Assistant Professor</p> -->
+                  <!-- <p class="mb-0">President</p> 
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 fade-in">
+        <div class="team-card">
+          <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                  <img src="team\amulyaSpectrum.jpg" alt="Amulya Annapureddy" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                  <h5>Amulya Annapureddy
+                      <a href="http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4" class="text-decoration-none ms-2">
+                          <i class="fab fa-linkedin text-primary"></i>
+                      </a>
+                  </h5>
+                  <p class="team-role">Club Member</p>
+                  <!-- <p class="team-role">Assistant Professor</p> -->
+                  <!-- <p class="mb-0">President</p> 
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </div>
+</section> 
+-->
+
+<section id="team" class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center fade-in">
+        <h2 class="section-title">Meet Our Team</h2>
+      </div>
+    </div>
+    <div class="row" id="team-container">
+      <!-- Team cards will be injected here by JavaScript -->
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- Gallery Section -->
     <section id="gallery" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center fade-in">
-                    <h2 class="section-title">Event Gallery</h2>
-                </div>
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="gallery-overlay">
-                            <h6>Web Development Workshop</h6>
-                            <p class="mb-0">Students learning React and modern web technologies</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="gallery-overlay">
-                            <h6>Hackathon Finals</h6>
-                            <p class="mb-0">Teams presenting their innovative solutions</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="gallery-overlay">
-                            <h6>Team Building Event</h6>
-                            <p class="mb-0">Club members networking and collaboration</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <div class="gallery-overlay">
-                            <h6>AI/ML Workshop</h6>
-                            <p class="mb-0">Hands-on machine learning project development</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="gallery-overlay">
-                            <h6>Cybersecurity Session</h6>
-                            <p class="mb-0">Ethical hacking and penetration testing demo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="gallery-overlay">
-                            <h6>Mobile App Development</h6>
-                            <p class="mb-0">Flutter workshop and app deployment session</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center fade-in">
+            <h2 class="section-title">Event Gallery</h2>
+          </div>
         </div>
+        <div class="row g-3">
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="gallery-overlay">
+                <h6>Web Development Workshop</h6>
+                <p class="mb-0">
+                  Students learning React and modern web technologies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="gallery-overlay">
+                <h6>Hackathon Finals</h6>
+                <p class="mb-0">Teams presenting their innovative solutions</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="gallery-overlay">
+                <h6>Team Building Event</h6>
+                <p class="mb-0">Club members networking and collaboration</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <div class="gallery-overlay">
+                <h6>AI/ML Workshop</h6>
+                <p class="mb-0">
+                  Hands-on machine learning project development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="gallery-overlay">
+                <h6>Cybersecurity Session</h6>
+                <p class="mb-0">Ethical hacking and penetration testing demo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-in">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="gallery-overlay">
+                <h6>Mobile App Development</h6>
+                <p class="mb-0">Flutter workshop and app deployment session</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact/Footer Section -->
     <footer id="contact" class="footer">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12 fade-in">
-                    <h3 class="mb-4">Get In Touch</h3>
-                    <div class="social-icons mb-4">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </div>
-                    <p class="mb-2">
-                        <i class="fas fa-envelope me-2"></i>
-                        <a href="mailto:contact@techforge.club" class="text-decoration-none">contact@techforge.club</a>
-                    </p>
-                    <hr class="my-4">
-                    <p class="text-muted">&copy; 2025 TechForge Club. All rights reserved. | Built with passion by our community</p>
-                </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 fade-in">
+            <h3 class="mb-4">Get In Touch</h3>
+            <div class="social-icons mb-4">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
+            <p class="mb-2">
+              <i class="fas fa-envelope me-2"></i>
+              <a
+                href="mailto:contact@techforge.club"
+                class="text-decoration-none"
+                >contact@techforge.club</a
+              >
+            </p>
+            <hr class="my-4" />
+            <p class="text-muted">
+              &copy; 2025 Spectrum Club. All rights reserved. | Built with
+              passion by our community
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
-        // Smooth scrolling
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
+      // Smooth scrolling
+      function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.style.background = "rgba(255, 255, 255, 0.98)";
+          navbar.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+        } else {
+          navbar.style.background = "rgba(255, 255, 255, 0.95)";
+          navbar.style.boxShadow = "none";
         }
-        
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-            } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = 'none';
+      });
+
+      // Scroll reveal animation
+      function revealOnScroll() {
+        const elements = document.querySelectorAll(".fade-in");
+        const windowHeight = window.innerHeight;
+
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          if (elementTop < windowHeight - 100) {
+            element.classList.add("visible");
+          }
+        });
+      }
+
+      // Initialize scroll reveal
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+
+      // Navigation link smooth scroll
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          if (this.getAttribute("href").startsWith("#")) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            scrollToSection(targetId);
+
+            // Close mobile menu if open
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const navbarCollapse = document.querySelector(".navbar-collapse");
+            if (navbarCollapse.classList.contains("show")) {
+              navbarToggler.click();
             }
+          }
         });
-        
-        // Scroll reveal animation
-        function revealOnScroll() {
-            const elements = document.querySelectorAll('.fade-in');
-            const windowHeight = window.innerHeight;
-            
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                if (elementTop < windowHeight - 100) {
-                    element.classList.add('visible');
-                }
-            });
-        }
-        
-        // Initialize scroll reveal
-        window.addEventListener('scroll', revealOnScroll);
-        window.addEventListener('load', revealOnScroll);
-        
-        // Navigation link smooth scroll
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                if (this.getAttribute('href').startsWith('#')) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    scrollToSection(targetId);
-                    
-                    // Close mobile menu if open
-                    const navbarToggler = document.querySelector('.navbar-toggler');
-                    const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarCollapse.classList.contains('show')) {
-                        navbarToggler.click();
-                    }
-                }
-            });
+      });
+
+      // Gallery item click effect
+      document.querySelectorAll(".gallery-item").forEach((item) => {
+        item.addEventListener("click", function () {
+          // Add a subtle click animation
+          this.style.transform = "scale(0.98)";
+          setTimeout(() => {
+            this.style.transform = "scale(1.05)";
+          }, 100);
+          setTimeout(() => {
+            this.style.transform = "scale(1)";
+          }, 200);
         });
-        
-        // Gallery item click effect
-        document.querySelectorAll('.gallery-item').forEach(item => {
-            item.addEventListener('click', function() {
-                // Add a subtle click animation
-                this.style.transform = 'scale(0.98)';
-                setTimeout(() => {
-                    this.style.transform = 'scale(1.05)';
-                }, 100);
-                setTimeout(() => {
-                    this.style.transform = 'scale(1)';
-                }, 200);
-            });
-        });
-        
-        // Auto-start carousel
-        document.addEventListener('DOMContentLoaded', function() {
-            const carousel = new bootstrap.Carousel(document.getElementById('heroCarousel'), {
-                interval: 5000,
-                wrap: true
-            });
-        });
+      });
+
+      // Auto-start carousel
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = new bootstrap.Carousel(
+          document.getElementById("heroCarousel"),
+          {
+            interval: 4000,
+            wrap: true,
+          }
+        );
+      });
     </script>
-</body>
+
+    <script>
+  fetch('teamDetails.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('team-container');
+
+      data.forEach(member => {
+        const col = document.createElement('div');
+        col.className = 'col-lg-6 fade-in';
+
+        const imgSrc = `team/${member.image}`;
+        const linkedinIcon = member.linkedin ? `<a href="${member.linkedin}" class="text-decoration-none ms-2" target="_blank"><i class="fab fa-linkedin text-primary"></i></a>` : '';
+
+        const yearInfo = member.year ? `<p class="mb-0">${member.year}</p>` : '';
+
+        col.innerHTML = `
+          <div class="team-card">
+            <div class="d-flex align-items-center">
+              <div class="team-avatar me-4">
+                <img src="${imgSrc}" alt="${member.name}" class="rounded-circle" style="width:120px; height:130px; object-fit:cover; border:2px solid white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+              </div>
+              <div class="team-info">
+                <h5>${member.name} ${linkedinIcon}</h5>
+                <p class="team-role">${member.role}</p>
+                ${yearInfo}
+              </div>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(col);
+      });
+    })
+    .catch(error => {
+      console.error('Error loading team details:', error);
+    });
+</script>
+
+
+  </body>
 </html>

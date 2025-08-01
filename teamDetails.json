@@ -12,45 +12,60 @@
         "linkedin": ""
     },
     {
-        "name": "G. NV Nihar",
+        "name": "K. Chetan Eshwar",
         "role": "Student Coordinator",
+        "year": "UG-4",
+        "image": "chetanSpectrum.jpg",
+        "linkedin": "https://www.linkedin.com/in/chethan-eswar-kancheti/"
+    },
+     {
+        "name": "A. Nagalakshmi",
+        "role": "Student Coordinator",
+        "year": "UG-4",
+        "image": "nlSpectrum.jpg",
+        "linkedin": "https://www.linkedin.com/in/nagalakshmi-avula-793b61290/"
+    },
+    {
+        "name": "G. NV Nihar",
+        "role": "Organizier",
         "year": "UG-3",
         "image": "niharSpectrum.png",
-        "linkedin": "http://www.linkedin.com/in/nihargnv"
+        "linkedin": "https://www.linkedin.com/in/nihargnv"
     },
     {
         "name": "Shivaraju Nallagorla",
-        "role": "Student Coordinator",
+        "role": "Organizier",
         "year": "UG-3",
         "image": "shivarajSpectrum.jpg",
-        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
+        "linkedin": "https://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
     },
     {
         "name": "Siri Chandana",
-        "role": "Student Coordinator",
+        "role": "Organizier",
         "year": "UG-3",
         "image": "siriChandanaSpectrum.jpg",
-        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
+        "linkedin": "https://www.linkedin.com/in/sirichandanavishnubhotla"
     },
     {
         "name": "K. Joseph Prem Kumar",
         "role": "Club Member",
         "year": "UG-3",
         "image": "josephSpectrum.jpg",
-        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
+        "linkedin": "https://www.linkedin.com/in/joseph-prem-kumar-kandakatla/"
     },
-    {
-        "name": "K. Chetan Eshwar",
-        "role": "Club Member",
-        "year": "UG-4",
-        "image": "chetanSpectrum.jpg",
-        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
-    },
+    
     {
         "name": "Amulya Annapureddy",
         "role": "Club Member",
         "year": "UG-3",
         "image": "amulyaSpectrum.jpg",
-        "linkedin": "http://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
+        "linkedin": "https://www.linkedin.com/in/amulya-annapureddy-55b02a331"
+    },
+    {
+        "name": "Simhadri Pulipati",
+        "role": "Club Member",
+        "year": "UG-3",
+        "image": "profile-icon.jpg",
+        "linkedin": "http://www.linkedin.com/in/simhadri-pulipati"
     }
 ]
