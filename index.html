@@ -55,67 +55,43 @@
   </nav>
 
   <!-- Hero Carousel -->
-  <section id="home" style="padding-top: 45px">
+  <section id="home" style="padding-top: 60px">
     <!-- Desktop Carousel -->
-    <div id="heroCarousel" class="carousel slide carousel-fade d-none d-lg-block" data-bs-ride="carousel"
-      data-bs-interval="1000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-      </div>
-
+    <div id="heroCarousel" class="carousel slide disp-nani-none" data-bs-ride="carousel"
+      style="width: 90%; margin: auto;">
       <div class="carousel-inner">
-        <div class="carousel-item active" style="
-              background-image: url('deskHero.webp');
-              background-size: 87%;
-              background-repeat: no-repeat;
-              background-position: center;
-              height: 95vh;
-            ">
+        <div class="carousel-item active"
+          style="background-image: url('deskHero.webp'); height: 90vh; background-size: cover; background-position: center; border-radius: 15px;">
 
         </div>
-      </div>
 
-      <div class="carousel-item" style="
-              background-image: url('deskMore.webp');
-              background-size: 87%;
-              background-repeat: no-repeat;
-              background-position: center;
-              height: 95vh;
-            ">
-        <!-- <div class="carousel-overlay"></div> -->
-        <div class="container h-100 d-flex align-items-center">
-          <div class="carousel-caption text-center" style="padding-top: 3rem">
-            <h1 class="display-4 fw-bold">Build the Future</h1>
-            <p class="lead mb-4">
-              Join us in creating tomorrow's technology today
-            </p>
-            <a href="#events" class="btn btn-primary btn-lg px-4 me-2">View Events</a>
+        <div class="carousel-item"
+          style="background-image: url('deskSlide.webp');  height: 90vh; background-size: cover; background-position: center; border-radius: 15px;">
+
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url('deskMore.webp');  height: 90vh; background-size: cover; background-position: center; border-radius: 15px;">
+          <!-- <div class="carousel-overlay"></div> -->
+          <div class="container h-100 d-flex align-items-center">
+            <div class="carousel-caption text-center" style="padding-top: 3rem">
+              <h1 class="display-4 fw-bold">Build the Future</h1>
+              <p class="lead mb-4">
+                Join us in creating tomorrow's technology today
+              </p>
+              <a href="#events" class="btn btn-primary btn-lg px-4 me-2">View Events</a>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="carousel-item" style="
-              background-image: url('deskSlide.webp');
-              background-size: 87%;
-              background-repeat: no-repeat;
-              background-position: center;
-              height: 95vh;
-            ">
-
-      </div>
-    </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <!-- Mobile Carousel -->
@@ -173,10 +149,19 @@
         <div class="col-lg-8 text-center fade-in">
           <h2 class="section-title">About Spectrum</h2>
           <p class="lead">
-            Spectrum is the official technical club of the CSE (Artificial Intelligence & Machine Learning) department at RVR&JC College of Engineering, Guntur. The club organizes major technical events, focusing on areas such as programming, artificial intelligence, machine learning, and logical problem solving. Spectrum aims to provide students with a platform to apply their academic knowledge, collaborate in teams, and gain hands-on experience through well-structured and engaging events.
+            Spectrum is the official technical club of the CSE (Artificial Intelligence & Machine Learning)
+            department at RVR&JC College of Engineering, Guntur. The club organizes major technical events,
+            focusing on areas such as programming, artificial intelligence, machine learning, and logical
+            problem solving. Spectrum aims to provide students with a platform to apply their academic
+            knowledge, collaborate in teams, and gain hands-on experience through well-structured and
+            engaging events.
           </p>
           <p>
-            Driven by a passionate group of students, Spectrum strives to create an inclusive environment where learning is practical, peer-driven, and enjoyable. Whether you are just getting started with technology or looking to deepen your skills, the club welcomes all levels of interest and experience. Spectrum is a space where curiosity is encouraged, ideas are shared, and real growth happens through participation and teamwork.
+            Driven by a passionate group of students, Spectrum strives to create an inclusive environment
+            where learning is practical, peer-driven, and enjoyable. Whether you are just getting started
+            with technology or looking to deepen your skills, the club welcomes all levels of interest and
+            experience. Spectrum is a space where curiosity is encouraged, ideas are shared, and real growth
+            happens through participation and teamwork.
           </p>
         </div>
       </div>
@@ -504,4 +489,5 @@
       });
   </script>
 </body>
+
 </html>
