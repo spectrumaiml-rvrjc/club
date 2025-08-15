@@ -66,6 +66,51 @@
         "role": "Club Member",
         "year": "UG-3",
         "image": "profile-icon.jpg",
-        "linkedin": "http://www.linkedin.com/in/simhadri-pulipati"
+        "linkedin": "https://www.linkedin.com/in/simhadri-pulipati"
+    },
+    {
+        "name": "Meghanath Thiruvalluri",
+        "role": "Club Member",
+        "year": "UG-2",
+        "image": "meghanathSpectrum.jpg",
+        "linkedin": "https://www.linkedin.com/in/meghanath-thiruvalluri-b71218338"
+    },
+    {
+        "name": "Usha Sri Valeti",
+        "role": "Club Member",
+        "year": "UG-2",
+        "image": "ushaSpectrum.jpg",
+        "linkedin": "https://www.linkedin.com/in/ushasri-valeti-a5a662370"
+    },
+    {
+        "name": "Anand Chowdari",
+        "role": "Club Member",
+        "year": "UG-2",
+        "image": "anandSpectrum.jpg",
+        "linkedin": "https://www.linkedin.com/in/anand-chowdari"
+    },
+
+    {
+        "name": "ph1",
+        "role": "Club Member",
+        "year": "UG-2",
+        "image": "profile-icon.jpg",
+        "linkedin": "https://www.linkedin.com/in/anand-chowdari"
+    },
+
+    {
+        "name": "ph2",
+        "role": "Club Member",
+        "year": "UG-2",
+        "image": "profile-icon.jpg",
+        "linkedin": "https://www.linkedin.com/in/anand-chowdari"
+    },
+
+    {
+        "name": "ph3",
+        "role": "Club Member",
+        "year": "UG-2",
+        "image": "profile-icon.jpg",
+        "linkedin": "https://www.linkedin.com/in/anand-chowdari"
     }
 ]
