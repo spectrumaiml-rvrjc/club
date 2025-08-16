@@ -12,14 +12,14 @@
         "linkedin": ""
     },
     {
-        "name": "K. Chetan Eshwar",
+        "name": "Chetan Eshwar Kancheti",
         "role": "Student Coordinator",
         "year": "UG-4",
         "image": "chetanSpectrum.jpg",
         "linkedin": "https://www.linkedin.com/in/chethan-eswar-kancheti/"
     },
      {
-        "name": "A. Nagalakshmi",
+        "name": "Nagalakshmi Avula",
         "role": "Student Coordinator",
         "year": "UG-4",
         "image": "nlSpectrum.jpg",
@@ -40,17 +40,17 @@
         "linkedin": "https://www.linkedin.com/in/shivaraj-nallagorla-5b15742a4"
     },
     {
-        "name": "Siri Chandana",
+        "name": "Siri Chandana Vishnubhotla",
         "role": "Organizier",
         "year": "UG-3",
         "image": "siriChandanaSpectrum.jpg",
         "linkedin": "https://www.linkedin.com/in/sirichandanavishnubhotla"
     },
     {
-        "name": "K. Joseph Prem Kumar",
+        "name": "Joseph Prem Kumar Kandakatla",
         "role": "Club Member",
         "year": "UG-3",
-        "image": "joseph2.jpg",
+        "image": "josephSpectrum.jpg",
         "linkedin": "https://www.linkedin.com/in/joseph-prem-kumar-kandakatla/"
     },
     
@@ -83,7 +83,7 @@
         "linkedin": "https://www.linkedin.com/in/ushasri-valeti-a5a662370"
     },   
     {
-        "name": "Geetha Charani K",
+        "name": "Geetha Charani Kakollu",
         "role": "Club Member",
         "year": "UG-2, Y24CM079",
         "image": "geethaSpectrum.jpg",
@@ -97,18 +97,17 @@
         "linkedin": "https://www.linkedin.com/in/anand-chowdari"
     },
     {
-        "name": "G.Sri Sai Pravallika",
+        "name": "Pardhiv Sai Namburu",
+        "role": "Club Member",
+        "year": "UG-2",
+        "image": "pardhivSpectrum.jpg",
+        "linkedin": "https://in.linkedin.com/in/pardhiv-sai-namburu-6987b0320"
+    },
+    {
+        "name": "Sri Sai Pravallika G",
         "role": "Club Member",
         "year": "UG-2",
         "image": "saiSpectrum.jpg",
         "linkedin": "https://www.linkedin.com/in/sai-pravallika-b5619137a"
-    },
-
-    {
-        "name": "ph3",
-        "role": "Club Member",
-        "year": "UG-2",
-        "image": "profile-icon.jpg",
-        "linkedin": "https://www.linkedin.com/in/anand-chowdari"
     }
 ]
