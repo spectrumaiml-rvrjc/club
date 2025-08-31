@@ -81,7 +81,6 @@
    left: 0;
    width: 100%;
    height: 100%;
-   background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
  }
@@ -89,28 +88,18 @@
  /* Desktop background image */
  .event-header-desktop-bg {
    background-image: url('bannerDesk.png');
+   background-size: cover;
    /* Placeholder for desktop image */
  }
 
  /* Mobile background image */
  .event-header-mobile-bg {
    background-image: url('bannerMobile.png');
+   background-size: 99%;
    /* Placeholder for mobile image */
  }
 
  .event-header-overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   /* background: rgba(0, 0, 0, 0.5); */
-   /* Dark overlay for text readability */
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   color: var(--bs-white);
    padding: 1rem;
  }
 
