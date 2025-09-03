@@ -15,9 +15,6 @@
         rel="stylesheet" />
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="event-style.css" />
-    <style>
-
-    </style>
     <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
 </head>
 
@@ -110,81 +107,28 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h2 class="section-title">Selected for Mains</h2>
-                    <!-- <p>The following participants have been selected for the mains round based on their performance in the
-            prelims.</p>
+                    <p>The following participants have been selected for the mains round based on their performance in
+                        the prelims.</p>
 
-          <div class="table-responsive table-container rounded-3 shadow-sm">
-            <table class="table table-hover mb-0">
-              <thead>
-                <tr>
-                  <th>S.No</th>
-                  <th>Name</th>
-                  <th>Registration Number</th>
-                  <th>Score</th>
-                </tr>
-              </thead>
-              <tbody id="mains-participants">
-              </tbody>
-            </table>
-          </div> -->
+                    <div class="table-responsive table-container rounded-3 shadow-sm">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Name</th>
+                                    <th>Registration Number</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mains-participants">
+                            </tbody>
+                        </table>
+                    </div>
 
                     <div class="alert alert-warning mt-3 d-flex align-items-center rounded-3" role="alert">
-                        <i class="fas fa-exclamation-circle me-2"></i> The list will be updated after the prelims round
-                        is
-                        completed.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Mains Round-1 Link -->
-        <section class="mb-5 fade-in">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h2 class="section-title">Mains Round-1 Link</h2>
-                    <p>Use the following link to attempt the Mains Round-1 Link. The link will be active from 01:00 PM to
-                        02:20 PM on September 03, 2025.
-                    </p>
-
-                    <div class="copy-link-container bg-light rounded-3 p-3 my-3 border">
-                        <div class="copy-link d-flex align-items-center bg-white rounded-3 p-2 border">
-                            <input type="text" id="prelims-link" value="https://www.hackerrank.com/aiml-arena-mains-round-1"
-                                class="form-control border-0 shadow-none p-2" readonly>
-                            <button onclick="copyPrelimsLink()" class="btn btn-primary rounded-3 px-3 py-2 ms-2">
-                                <i class="fas fa-copy me-1"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="alert alert-info mt-3 d-flex align-items-center rounded-3" role="alert">
-                        <i class="fas fa-info-circle me-2"></i> The link will be active only during the specified time
-                        period.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Mains Round-3 Link -->
-        <section class="mb-5 fade-in">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h2 class="section-title">Mains Round-3 Link</h2>
-                    <p>Use the following link to attempt the Mains Round-3 Link. The link will be active on September 03, 2025.
-                    </p>
-
-                    <div class="copy-link-container bg-light rounded-3 p-3 my-3 border">
-                        <div class="copy-link d-flex align-items-center bg-white rounded-3 p-2 border">
-                            <input type="text" id="prelims-link" value="https://spectrumaiml-rvrjc.github.io/aiml-arena-algos/"
-                                class="form-control border-0 shadow-none p-2" readonly>
-                            <button onclick="copyPrelimsLink()" class="btn btn-primary rounded-3 px-3 py-2 ms-2">
-                                <i class="fas fa-copy me-1"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="alert alert-info mt-3 d-flex align-items-center rounded-3" role="alert">
-                        <i class="fas fa-info-circle me-2"></i> The link will be active only during the specified time
-                        period.
+                        <i class="fas fa-exclamation-circle me-2"></i> Please note that a few participants have been
+                        removed as we detected fraudulent activity, such as not attempting the prelims in the designated
+                        labs (venue). and failure of adhering to remote proctoring norms (change of geo location).
                     </div>
                 </div>
             </div>
@@ -195,28 +139,34 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h3 class="section-title">Download Certificate</h3>
-                    <!-- <p>Enter your registration number to download your participation certificate.</p>
+                    <p>Enter your registration number to verify and download your participation certificate.</p>
 
-          <div class="certificate-download bg-light rounded-3 p-4 border">
-            <div class="row g-3 align-items-center">
-              <div class="col-md-8">
-                <input type="text" class="form-control rounded-3 p-3" id="regd-number"
-                  placeholder="Enter your registration number">
-              </div>
-              <div class="col-md-4">
-                <button class="btn btn-primary w-100 rounded-3 p-3" onclick="downloadCertificate()">
-                  <i class="fas fa-download me-1"></i> Download Certificate
-                </button>
-              </div>
-            </div>
-        </div> -->
+                    <div class="certificate-download bg-light rounded-3 p-4 border">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-md-8">
+                                <input type="text" class="form-control rounded-3 p-3" id="regd-number"
+                                    placeholder="Enter your registration number">
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-primary w-100 rounded-3 p-3" onclick="downloadCertificate()">
+                                    <i class="fas fa-download me-1"></i> Download Certificate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Result message -->
+                    <div id="cert-result" class="mt-4"></div>
+
                     <div class="alert alert-info mt-3 d-flex align-items-center rounded-3" role="alert">
                         <i class="fas fa-info-circle me-2"></i> Certificates will be available after the event
-                        concludes. We will send mails to participants.
+                        concludes.
+                        We will also send confirmation mails to participants.
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- Event Gallery -->
         <section class="mb-5 fade-in">
@@ -301,22 +251,30 @@
             revealOnScroll();
         });
         // Sample data for participants selected for mains
-        // const mainsParticipants = [
-        //   { id: 1, name: "Rahul Sharma<br>Priya Patel", regdNo: "2101AI001<br>2101AI015", score: 92 },
-        //   { id: 2, name: "Priya Patel", regdNo: "2101AI015", score: 89 },
-        //   { id: 3, name: "Amit Kumar", regdNo: "2101AI023", score: 87 },
-        //   { id: 4, name: "Sneha Reddy", regdNo: "2101AI032", score: 85 },
-        //   { id: 5, name: "Vikram Singh", regdNo: "2101AI045", score: 84 },
-        //   { id: 6, name: "Neha Gupta", regdNo: "2101AI056", score: 82 },
-        //   { id: 7, name: "Karthik M", regdNo: "2101AI062", score: 80 },
-        //   { id: 8, name: "Anjali Desai", regdNo: "2101AI071", score: 79 },
-        //   { id: 9, name: "Sanjay R", regdNo: "2101AI078", score: 78 },
-        //   { id: 10, name: "Divya Nair", regdNo: "2101AI085", score: 77 }
-        // ];
-
         const mainsParticipants = [
-
+            { id: 1, name: "Jonnadula Tarak Ram<br>Tunuguntla Jaya Raj Kumar", regdNo: "L24CS205<br>L24CS217", score: 0 },
+            { id: 2, name: "jaladi gowtham<br>Suryasena", regdNo: "Y22CD050<br>Y22CD028", score: 0 },
+            { id: 3, name: "Prasanth Doddi<br>Badugu raju", regdNo: "Y22CD030<br>Y22CD006", score: 0 },
+            { id: 4, name: "Kunisetty Purna Harshini<br>Karanam Mohitha", regdNo: "Y24CS178<br>Y24CS139", score: 0 },
+            { id: 5, name: "Bogem Raghuram<br>DARAPANENI AJAY", regdNo: "Y23cb009<br>Y23CB013", score: 0 },
+            { id: 6, name: "Shanmukha Sai Sandeep Repala<br>Kolli Himaraga Varshith", regdNo: "Y23CS150<br>Y23CS072", score: 0 },
+            { id: 7, name: "kappalapraneeth<br>MALLAVRAPU KAMAL RISHI", regdNo: "T25CSMB013<br>T25CSMB047", score: 0 },
+            { id: 8, name: "Pendyala Bhagavan<br>RAMIREDDY SATHVIK REDDY", regdNo: "Y22CS145<br>Y22CS158", score: 0 },
+            { id: 9, name: "Nischal Mupparaju<br>NAKKA ESWAR MANIKANTA", regdNo: "Y24CS219<br>Y24CS224", score: 0 },
+            { id: 10, name: "Nimmala Ajay Kumar<br>Mareedu Mohankrishna", regdNo: "Y23CS124<br>Y23CS101", score: 0 },
+            { id: 11, name: "GANGINENI LAKSHMI NAGA CHANDRIKA<br>Gudavalli Lakshmi Prasanna", regdNo: "Y22CS049<br>Y22CS060", score: 0 },
+            { id: 12, name: "Gayathri Asritha Patchipulusu<br>Patchipulusu Gayathri Asritha", regdNo: "Y22CS144<br>Y22CS187", score: 0 },
+            { id: 13, name: "Ayesha Shaik<br>Ponduri divya harshitha", regdNo: "Y24CM164<br>Y24CM146", score: 0 },
+            { id: 14, name: "GOPI CHAND<br>SADINENI GOPI CHAND", regdNo: "Y22CS160<br>Y22CS178", score: 0 },
+            { id: 15, name: "Boddu Hyma Ramya<br>AVK Thanmai", regdNo: "Y23CD022<br>Y23CD007", score: 0 },
+            { id: 16, name: "Syam Harsha Taninki<br>CHITTALURI RAGHAVA", regdNo: "Y23CS169<br>Y23CS032", score: 0 },
+            { id: 17, name: "Siddhardha Shoda<br>Kundrapu Ravikiran", regdNo: "Y22IT109<br>Y22it062", score: 0 },
+            { id: 18, name: "Kandipappuprudhvi<br>Charan Pinniboyina", regdNo: "L23CS208<br>Y22CS023", score: 0 },
+            { id: 19, name: "Dharma Teja Narisetty<br>Akasapu Manikanta", regdNo: "Y22CD116<br>Y22CD001", score: 0 },
+            { id: 20, name: "Mallupeddi Praharsha Krishna<br>Mohammad Alsaba Shafeen", regdNo: "Y22CM099<br>Y22CM111", score: 0 }
         ];
+
+
 
         // Populate the mains participants table
         function populateMainsTable() {
@@ -358,20 +316,34 @@
         }
 
         // Certificate download function
-        function downloadCertificate() {
+        async function downloadCertificate() {
             const regdNo = document.getElementById('regd-number').value.trim();
+            const resultDiv = document.getElementById("cert-result");
 
             if (!regdNo) {
-                alert('Please enter your registration number');
+                resultDiv.innerHTML = `<p class="text-danger fw-bold">❌ Please enter your registration number.</p>`;
                 return;
             }
 
-            const participant = mainsParticipants.find(p => p.regdNo.toLowerCase() === regdNo.toLowerCase());
+            resultDiv.innerHTML = "🔍 Searching...";
 
-            if (participant) {
-                alert(`Simulating certificate download for ${participant.name} (${regdNo}). In a real app, a PDF would download.`);
-            } else {
-                alert('Registration number not found. Please check your entry or ensure you participated.');
+            try {
+                const res = await fetch("cert_db.json");
+                const data = await res.json();
+
+                if (data[regdNo]) {
+                    const cert = data[regdNo];
+                    resultDiv.innerHTML = `
+          ✅ <b>${cert.name}</b> participated in <b>AIML Arena</b><br><br>
+          <a href="${cert.certificate}" target="_blank" class="btn btn-success rounded-3">
+            <i class="fas fa-file-download me-2"></i>Download Certificate
+          </a>
+        `;
+                } else {
+                    resultDiv.innerHTML = `<p class="text-danger fw-bold">❌ No certificate found for ${regdNo}.</p>`;
+                }
+            } catch (err) {
+                resultDiv.innerHTML = `<p class="text-danger fw-bold">⚠️ Error loading certificate data.</p>`;
             }
         }
 

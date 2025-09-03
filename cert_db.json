@@ -1,0 +1,14 @@
+{
+  "Y23SP01": {
+    "name": "GOGINENI NAGA VENKATA NIHAR CHOWDARY INKA PEDDADI",
+    "dept": "AIML",
+    "regd": "Y23SP01",
+    "certificate": "certs/Y23SP01.pdf"
+  },
+  "Y23SP02": {
+    "name": "Nihar Chowdary",
+    "dept": "AIML",
+    "regd": "Y23SP02",
+    "certificate": "certs/Y23SP02.pdf"
+  }
+}

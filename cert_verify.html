@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate Verification - AIML Arena</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .verify-card {
+      max-width: 650px;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      background: #fff;
+      padding: 30px;
+    }
+
+    .verify-card h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .status-valid {
+      color: #198754;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .status-invalid {
+      color: #dc3545;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .details {
+      text-align: left;
+      margin-top: 15px;
+    }
+
+    .details p {
+      margin: 6px 0;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .details .name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .btn-download {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 1rem;
+      display: inline-block;
+    }
+  </style>
+  <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="verify-card shadow-sm">
+    <h1><i class="fas fa-certificate me-2 text-primary"></i>AI Spectrum Club</h1>
+    <div id="result">
+      <div class="text-muted text-center">🔍 Checking certificate validity...</div>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id");
+    const resultDiv = document.getElementById("result");
+
+    if (!id) {
+      resultDiv.innerHTML = `<p class="status-invalid"><i class="fas fa-times-circle me-2"></i>No certificate ID provided</p>`;
+    } else {
+      fetch("cert_db.json")
+        .then(r => r.json())
+        .then(data => {
+          if (data[id]) {
+            const cert = data[id];
+            resultDiv.innerHTML = `
+              <p class="status-valid"><i class="fas fa-check-circle me-2"></i>Certificate is VALID</p>
+              <div class="details">
+                <p class="name">Name: ${cert.name}</p>
+                <p><b>Event:</b> AIML Arena'25</p>
+                <p><b>Date:</b> 03 September 2025</p>
+                <p><b>Issued by:</b> Club AI Spectrum</p>
+              </div>
+              <a href="${cert.certificate}" target="_blank" class="btn btn-success btn-download">
+                <i class="fas fa-file-download me-2"></i>Download Certificate
+              </a>
+            `;
+          } else {
+            resultDiv.innerHTML = `<p class="status-invalid"><i class="fas fa-times-circle me-2"></i>Certificate not found</p>`;
+          }
+        })
+        .catch(() => {
+          resultDiv.innerHTML = `<p class="status-invalid"><i class="fas fa-exclamation-triangle me-2"></i>Error loading data</p>`;
+        });
+    }
+  </script>
+</body>
+
+</html>
