@@ -1,5 +1,4 @@
 pub/
-certs/
 *.log
 test_cert_data.json
 test_cert_verification.html
