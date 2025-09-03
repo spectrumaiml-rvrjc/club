@@ -159,9 +159,32 @@
                     <div id="cert-result" class="mt-4"></div>
 
                     <div class="alert alert-info mt-3 d-flex align-items-center rounded-3" role="alert">
-                        <i class="fas fa-info-circle me-2"></i> Certificates will be available after the event
-                        concludes.
-                        We will also send confirmation mails to participants.
+                        <i class="fas fa-info-circle me-2"></i> We have generated certificates based on the data provided. If your certificate is not found, it may be due to incorrect or mismatched details submitted during registration.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Winners -->
+        <section class="mb-5 fade-in">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="section-title">🏆 Winners</h2>
+                    <p>Congratulations to the following participants for securing top positions in AIML Arena 2025.</p>
+
+                    <div class="table-responsive table-container rounded-3 shadow-sm">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Name</th>
+                                    <th>Registration Number</th>
+                                </tr>
+                            </thead>
+                            <tbody id="winners-list">
+                                <!-- Winners data will be dynamically inserted here -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -173,42 +196,40 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h2 class="section-title">Event Gallery</h2>
-                    <div class="alert alert-info mt-3 d-flex align-items-center rounded-3" role="alert">
+                    <!-- <div class="alert alert-info mt-3 d-flex align-items-center rounded-3" role="alert">
                         <i class="fas fa-info-circle me-2"></i> Photos from the AIML Arena event will be displayed here
                         after the event.
+                    </div> -->
+
+                    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                        <div class="col">
+                            <div class="gallery-item rounded-3 shadow-sm">
+                                <img src="gallery\o1.JPG" alt="AIML Arena Event" class="gallery-img rounded-top-3">
+                                <div class="gallery-overlay rounded-bottom-3">
+                                    <!-- <h6></h6> -->
+                                    <p class="mb-0">AIML Arena Winners</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gallery-item rounded-3 shadow-sm">
+                                <img src="gallery\o2.JPG" alt="Prelims Round" class="gallery-img rounded-top-3">
+                                <div class="gallery-overlay rounded-bottom-3">
+                                    <!-- <h6></h6> -->
+                                    <p class="mb-0">AIML Arena 1st Runner Up</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gallery-item rounded-3 shadow-sm">
+                                <img src="gallery\o3.JPG" alt="Mains Round" class="gallery-img rounded-top-3">
+                                <div class="gallery-overlay rounded-bottom-3">
+                                    <!-- <h6></h6> -->
+                                    <p class="mb-0">AIML Arena 2nd Runner Up</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- 
-          <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col">
-              <div class="gallery-item rounded-3 shadow-sm">
-                <img src="https://via.placeholder.com/400x300?text=AIML+Arena+2025" alt="AIML Arena Event"
-                  class="gallery-img rounded-top-3">
-                <div class="gallery-overlay rounded-bottom-3">
-                  <h6>AIML Arena 2025</h6>
-                  <p class="mb-0">Event photos coming soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery-item rounded-3 shadow-sm">
-                <img src="https://via.placeholder.com/400x300?text=Prelims+Round" alt="Prelims Round"
-                  class="gallery-img rounded-top-3">
-                <div class="gallery-overlay rounded-bottom-3">
-                  <h6>Prelims Round</h6>
-                  <p class="mb-0">MCQ competition</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery-item rounded-3 shadow-sm">
-                <img src="https://via.placeholder.com/400x300?text=Mains+Round" alt="Mains Round" class="gallery-img rounded-top-3">
-                <div class="gallery-overlay rounded-bottom-3">
-                  <h6>Mains Round</h6>
-                  <p class="mb-0">Coding challenge</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
                 </div>
             </div>
         </section>
@@ -252,27 +273,35 @@
         });
         // Sample data for participants selected for mains
         const mainsParticipants = [
-            { id: 1, name: "Jonnadula Tarak Ram<br>Tunuguntla Jaya Raj Kumar", regdNo: "L24CS205<br>L24CS217", score: 0 },
-            { id: 2, name: "jaladi gowtham<br>Suryasena", regdNo: "Y22CD050<br>Y22CD028", score: 0 },
-            { id: 3, name: "Prasanth Doddi<br>Badugu raju", regdNo: "Y22CD030<br>Y22CD006", score: 0 },
-            { id: 4, name: "Kunisetty Purna Harshini<br>Karanam Mohitha", regdNo: "Y24CS178<br>Y24CS139", score: 0 },
-            { id: 5, name: "Bogem Raghuram<br>DARAPANENI AJAY", regdNo: "Y23cb009<br>Y23CB013", score: 0 },
-            { id: 6, name: "Shanmukha Sai Sandeep Repala<br>Kolli Himaraga Varshith", regdNo: "Y23CS150<br>Y23CS072", score: 0 },
-            { id: 7, name: "kappalapraneeth<br>MALLAVRAPU KAMAL RISHI", regdNo: "T25CSMB013<br>T25CSMB047", score: 0 },
-            { id: 8, name: "Pendyala Bhagavan<br>RAMIREDDY SATHVIK REDDY", regdNo: "Y22CS145<br>Y22CS158", score: 0 },
-            { id: 9, name: "Nischal Mupparaju<br>NAKKA ESWAR MANIKANTA", regdNo: "Y24CS219<br>Y24CS224", score: 0 },
-            { id: 10, name: "Nimmala Ajay Kumar<br>Mareedu Mohankrishna", regdNo: "Y23CS124<br>Y23CS101", score: 0 },
-            { id: 11, name: "GANGINENI LAKSHMI NAGA CHANDRIKA<br>Gudavalli Lakshmi Prasanna", regdNo: "Y22CS049<br>Y22CS060", score: 0 },
-            { id: 12, name: "Gayathri Asritha Patchipulusu<br>Patchipulusu Gayathri Asritha", regdNo: "Y22CS144<br>Y22CS187", score: 0 },
-            { id: 13, name: "Ayesha Shaik<br>Ponduri divya harshitha", regdNo: "Y24CM164<br>Y24CM146", score: 0 },
-            { id: 14, name: "GOPI CHAND<br>SADINENI GOPI CHAND", regdNo: "Y22CS160<br>Y22CS178", score: 0 },
-            { id: 15, name: "Boddu Hyma Ramya<br>AVK Thanmai", regdNo: "Y23CD022<br>Y23CD007", score: 0 },
-            { id: 16, name: "Syam Harsha Taninki<br>CHITTALURI RAGHAVA", regdNo: "Y23CS169<br>Y23CS032", score: 0 },
-            { id: 17, name: "Siddhardha Shoda<br>Kundrapu Ravikiran", regdNo: "Y22IT109<br>Y22it062", score: 0 },
-            { id: 18, name: "Kandipappuprudhvi<br>Charan Pinniboyina", regdNo: "L23CS208<br>Y22CS023", score: 0 },
-            { id: 19, name: "Dharma Teja Narisetty<br>Akasapu Manikanta", regdNo: "Y22CD116<br>Y22CD001", score: 0 },
-            { id: 20, name: "Mallupeddi Praharsha Krishna<br>Mohammad Alsaba Shafeen", regdNo: "Y22CM099<br>Y22CM111", score: 0 }
+            { id: 1, name: "Jonnadula Tarak Ram<br>Tunuguntla Jaya Raj Kumar", regdNo: "L24CS205<br>L24CS217", score: 15 },
+            { id: 2, name: "jaladi gowtham<br>Suryasena", regdNo: "Y22CD050<br>Y22CD028", score: 15 },
+            { id: 3, name: "Prasanth Doddi<br>Badugu raju", regdNo: "Y22CD030<br>Y22CD006", score: 14 },
+            { id: 4, name: "Kunisetty Purna Harshini<br>Karanam Mohitha", regdNo: "Y24CS178<br>Y24CS139", score: 14 },
+            { id: 5, name: "Bogem Raghuram<br>DARAPANENI AJAY", regdNo: "Y23cb009<br>Y23CB013", score: 14 },
+            { id: 6, name: "Shanmukha Sai Sandeep Repala<br>Kolli Himaraga Varshith", regdNo: "Y23CS150<br>Y23CS072", score: 13 },
+            { id: 7, name: "kappalapraneeth<br>MALLAVRAPU KAMAL RISHI", regdNo: "T25CSMB013<br>T25CSMB047", score: 13 },
+            { id: 8, name: "Pendyala Bhagavan<br>RAMIREDDY SATHVIK REDDY", regdNo: "Y22CS145<br>Y22CS158", score: 13 },
+            { id: 9, name: "Nischal Mupparaju<br>NAKKA ESWAR MANIKANTA", regdNo: "Y24CS219<br>Y24CS224", score: 13 },
+            { id: 10, name: "Nimmala Ajay Kumar<br>Mareedu Mohankrishna", regdNo: "Y23CS124<br>Y23CS101", score: 13 },
+            { id: 11, name: "GANGINENI LAKSHMI NAGA CHANDRIKA<br>Gudavalli Lakshmi Prasanna", regdNo: "Y22CS049<br>Y22CS060", score: 12 },
+            { id: 12, name: "Gayathri Asritha Patchipulusu<br>Patchipulusu Gayathri Asritha", regdNo: "Y22CS144<br>Y22CS187", score: 12 },
+            { id: 13, name: "Ayesha Shaik<br>Ponduri divya harshitha", regdNo: "Y24CM164<br>Y24CM146", score: 12 },
+            { id: 14, name: "GOPI CHAND<br>SADINENI GOPI CHAND", regdNo: "Y22CS160<br>Y22CS178", score: 12 },
+            { id: 15, name: "Boddu Hyma Ramya<br>AVK Thanmai", regdNo: "Y23CD022<br>Y23CD007", score: 12 },
+            { id: 16, name: "Syam Harsha Taninki<br>CHITTALURI RAGHAVA", regdNo: "Y23CS169<br>Y23CS032", score: 12 },
+            { id: 17, name: "Siddhardha Shoda<br>Kundrapu Ravikiran", regdNo: "Y22IT109<br>Y22it062", score: 12 },
+            { id: 18, name: "Kandipappuprudhvi<br>Charan Pinniboyina", regdNo: "L23CS208<br>Y22CS023", score: 12 },
+            { id: 19, name: "Dharma Teja Narisetty<br>Akasapu Manikanta", regdNo: "Y22CD116<br>Y22CD001", score: 12 },
+            { id: 20, name: "Mallupeddi Praharsha Krishna<br>Mohammad Alsaba Shafeen", regdNo: "Y22CM099<br>Y22CM111", score: 11 }
         ];
+
+
+        const winners = [
+            { id: 1, name: "Sadineni Gopi Chand<br>Sontineni Jaswanth", regdNo: "Y22CS160<br>Y22CS178" },
+            { id: 2, name: "Dharma Teja Narisetty<br>Akasapu Venkata Sai Manikanta", regdNo: "Y22CD116<br>Y22CD001" },
+            { id: 3, name: "Mallupeddi Praharsha Krishna<br>Mohammad Alsaba Shafeen", regdNo: "Y22CM099<br>Y22CM111" }
+        ];
+
 
 
 
@@ -298,6 +327,26 @@
             });
         }
 
+        function populateWinnersTable() {
+            const tableBody = document.getElementById('winners-list');
+            tableBody.innerHTML = '';
+
+            if (mainsParticipants.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="4" class="text-center py-4 text-muted">No participants selected yet. Please check back later.</td></tr>';
+                return;
+            }
+
+            winners.forEach(participant => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+          <td>${participant.id}</td>
+          <td>${participant.name}</td>
+          <td>${participant.regdNo}</td>
+        `;
+                tableBody.appendChild(row);
+            });
+        }
+
         // Copy prelims link to clipboard
         function copyPrelimsLink() {
             const copyText = document.getElementById("prelims-link");
@@ -317,7 +366,7 @@
 
         // Certificate download function
         async function downloadCertificate() {
-            const regdNo = document.getElementById('regd-number').value.trim();
+            const regdNo = document.getElementById('regd-number').value.trim().toUpperCase();
             const resultDiv = document.getElementById("cert-result");
 
             if (!regdNo) {
@@ -382,6 +431,7 @@
         // Initialize functions when page loads
         document.addEventListener("DOMContentLoaded", function () {
             populateMainsTable();
+            populateWinnersTable();
             revealOnScroll(); // Initial check for elements in view
         });
 
